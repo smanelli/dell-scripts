@@ -1,6 +1,6 @@
 #! /bin/sh
 
-#abilita solo 1 core (con HT)
+#abilita solo 1 core (con il suo HT)
 for x in /sys/devices/system/cpu/cpu{1..11}/online; 
   do
     echo 1 >"$x"

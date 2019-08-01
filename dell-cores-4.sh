@@ -1,5 +1,6 @@
 #! /bin/sh
 
+#abilita 4 core con HT
 for x in /sys/devices/system/cpu/cpu{1..11}/online; 
   do
     echo 1 >"$x"
