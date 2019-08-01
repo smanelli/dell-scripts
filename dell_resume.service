@@ -1,0 +1,11 @@
+[Unit]
+Description=Run dell_resume
+After=suspend.target hibernate.target hybrid-sleep.target
+
+[Service]
+ExecStart=/usr/local/bin/dell_resume
+#User=my_user_name
+#Environment=DISPLAY=:0
+
+[Install]
+WantedBy=suspend.target hibernate.target hybrid-sleep.target
